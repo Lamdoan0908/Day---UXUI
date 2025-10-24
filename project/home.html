@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h2>PTIT Store</h2>
+      <p class="muted">Sản phẩm nổi bật</p>
+    </div>
+    <div class="actions">
+      <button id="openCart" class="btn ghost">Giỏ hàng (<span id="cartCount">0</span>)</button>
+      <button id="logoutBtn" class="btn primary">Đăng xuất</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="cards" class="cards-grid"></section>
+  </main>
+
+  <!-- Cart drawer -->
+  <div id="cartDrawer" class="cart-drawer">
+    <div class="cart-box">
+      <div class="cart-head">
+        <h3>Giỏ hàng</h3>
+        <button id="closeCart" class="btn ghost">Đóng</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="total">Tổng: <strong id="totalPrice">0₫</strong></div>
+        <div class="cart-controls">
+          <button id="checkoutBtn" class="btn primary">Thanh toán</button>
+          <button id="clearCartBtn" class="btn ghost">Xóa hết</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="home.js"></script>
+</body>
+</html>
